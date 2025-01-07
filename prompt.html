@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // console.log("Ola HTML")
+        // let nome =  prompt("Digite o seu nome")
+        // console.log(nome)
+
+        //$$$$$$$$$$$$ Desenvolver calculadora
+        /*let numero1 = parseInt(prompt("Digite um número"))          // parseInt transforma text em int
+        let numero2 = parseInt(prompt("Digite o segundo número"))
+        console.log(numero1 + numero2)                              // se não incluír parseInt irá concatenar Numero1 + Numero2
+        */
+        
+        //$$$$$$$$$$$$ Verificar se um nome tem a letra A
+        /*let nome = prompt("Digite seu nome:")
+        if(nome.includes("a") || nome.includes("A")){               // verifico se existe a minusculo ou A maiusculo
+            console.log(nome, "O nome tem a letra a")
+        }   else {
+            console.log(nome, "O nome não tem a letra")
+        }*/
+        
+        //$$$$$$$$$$$$ Verificar se um nome tem a letra A
+        /*let nome = prompt("Digite seu nome:")
+            console.log(nome.toLowerCase())
+            console.log(nome.toUpperCase())            
+        if(nome.toLowerCase().includes("a")){                       // toLowerCase transforma tudo em minusculo para comparar
+            console.log(nome, "O nome tem a letra a")
+        }   else {
+            console.log(nome, "O nome não tem a letra")
+        }*/
+
+        //$$$$$$$$$$$$ Desenvolver calculadora onde a pessoa digite a operação desejada
+        let numero1 = parseInt(prompt("Digite o primeiro número"))          // parseInt transforma text em int
+        let operacao = prompt("digite operacao desejada: Adição, Divisão, Multiplicação ou Subtração")
+        let numero2 = parseInt(prompt("Digite o segundo número"))
+            
+            console.log(numero1, operacao, numero2)
+
+        if(operacao === '+'){
+            console.log("O Valor da operação = ", numero1 + numero2) 
+        }   
+        else if(operacao === '-') {
+            console.log("O Valor da operação = ", numero1 - numero2) 
+        }
+        else if(operacao === '*') {
+            console.log("O Valor da operação = ", numero1 * numero2) 
+            }
+        else if(operacao === '/') {
+            console.log("O Valor da operação = ", numero1 / numero2) 
+        }                                   
+
+        
+        //pergunte a idade e com base na idade apresente o ano que a pessoa nasceu e apresente geração conforme tabela:
+        //se a pessoa nasceu entre 1946 e 1964: Baby boomer
+        //se a pessoa nasceu entre 1965 e 1980: Geração X
+        //se a pessoa nasceu entre 1981 e 1996: Millennial
+        //se a pessoa nasceu entre 1997 e 2012: Geração Z
+        //se a pessoa nasceu entre 2013: Geração alpha
+
+        let idade = prompt("informe sua idade")
+        let faixa = 2024 - idade
+
+            console.log("Você nasceu no ano:", faixa)
+
+        if (faixa<=1945){
+            console.log("Não classificado")
+        } else if(faixa>=1946 && faixa <=1964) {
+            console.log("Você faz parte da: Geração Baby boomer") 
+        } else if(faixa>=1965 && faixa <=1980) {
+            console.log("Você faz parte da: Geração X") 
+        } else if(faixa>=1981 && faixa <=1996) {
+            console.log("Você faz parte da: Millennial")
+        } else if(faixa>=1997 && faixa <=2012) {
+            console.log("Você faz parte da: Geração Z")
+        } else {
+            console.log("Você faz parte da: Geração alpha")
+        }
+
+    </script>
+</body>
+</html>

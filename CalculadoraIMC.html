@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // solicitar os dados do usuário: Altura e Peso. Para trabalhar com números decimais utilizar parsefloat
+        let peso = parseFloat(prompt("Digite o seu peso em KG"))
+        let altura = parseFloat(prompt("Digite sua altura em metros"))
+
+        //Calcular IMC
+        let imc = peso / (altura*altura)
+        console.log(imc)
+
+        if (imc < 18.5){
+            console.log("Sua classificaçao é: Magreza")
+        } else if(imc>=18.5 && imc <=24.999) {
+            console.log("Sua classificaçao é: Normal") 
+        } else if(imc>=25 && imc <=29.999) {
+            console.log("Sua classificaçao é: Sobrepeso") 
+        } else if(imc>=30 && imc <=39.999) {
+            console.log("Sua classificaçao é: Obesidade")
+        } else if(imc>=40) {
+            console.log("Sua classificaçao é: Obesidade grave")
+        } 
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        let ganhou = false
+        let numeroSorteado = Math.floor(Math.random() * 5)+1 // gerando 1 numero aleatório que pode ser de 1 a 20
+        let tentativas = 5
+
+        while(!ganhou && tentativas > 0){
+            
+            // console.log(numeroSorteado)
+
+            let palpite = parseInt(prompt("Qual o seu palpite do número sorteado?"))
+
+            if(numeroSorteado == palpite){
+                //console.log("PARABÉNS!! VOCÊ ACERTOU!!###@@@@ººº")        // aprenta informação no console do html
+                alert("PARABÉNS!! VOCÊ ACERTOU! ###@@@@ººº")                //alert = apresentar informação na caixa de perguntas
+                ganhou = true
+            }   else {
+                // console.log("Você errrrrrrou!!!!")
+                // console.log("Tente novamente!!!!")
+                // console.log("Você tem mais", tentativas, "tentativas")
+                tentativas--
+                alert(`Você errrrrrrou!!!! Tente novamente!, você tem mais, ${tentativas}, tentativas`)
+                
+                if (palpite < numeroSorteado){
+                    alert(`Seu palpite é menor que o número sorteado`)      //alert = apresentar informação na caixa de perguntas
+                } else if (palpite > numeroSorteado)
+                    alert(`Seu palpite é maior que o número sorteado`)      //alert = apresentar informação na caixa de perguntas                              
+                    //console.log("O número sorteado foi:", numeroSorteado)
+            }
+    }
+
+            console.log("O número sorteado foi:", numeroSorteado)
+
+    </script>
+</body>
+</html>
