@@ -58,7 +58,7 @@
     - Resultado: true
 */
     let numeros7 = [1, 3, 5, 7, 9, 10]
-    let existeONumero7 = numeros7.includes(7)    //verificar se existe o número 5 no array/lista [1,2,3,4]
+    let existeONumero7 = numeros7.includes(7)    //verificar se existe o número 7 no array/lista [1,2,3,4]
     console.log(existeONumero7)
 
     
