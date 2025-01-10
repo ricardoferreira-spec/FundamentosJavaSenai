@@ -1,0 +1,43 @@
+body{
+    background-color: chocolate; 
+    font-family: "Lora", serif;
+}
+p{ 
+    color: green;
+    font-size: 24px;
+    background-color: #808080;
+    width: 350px;        /* largura*/
+    height: 35px;       /* Altura*/
+    border: 4px solid #000;
+
+    /*Define margin especifica*/
+    margin: 100px 100px 100px 50px;
+    margin-right: 10px;
+    margin-top: 4px;
+    margin-left: 8px;
+    margin-bottom: 5px;
+    /*todos os lados*/
+    margin: 10px /*Cascata: oque vale é o ultimo comando*/;
+    border-radius: 10px; /*arredonda a borda*/
+    text-align: center;
+}
+
+strong{
+    background-color: aqua;
+    width: 100px;       /* largura*/
+    height: 35px;       /* Altura*/
+    margin-right: 100px;
+}
+
+.sub{                   /* class Sub eu consigo reaproveitar*/
+    text-align: left;
+    background-color: blue;
+}
+
+#mes{                   /* id = mes é unico. Só consigo utilizar 1 vez*/
+    background-color: blue;
+}
+img{
+    width: 100px;        /* largura*/
+    height: 100px;       /* Altura*/
+}

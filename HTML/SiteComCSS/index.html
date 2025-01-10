@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Styles/Styles.css">
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site com CSS</title>
+</head>
+<body>
+    <h1 style="color: rgb(226, 218, 107); font-size: 20px;">Exemplo HTML + CSS</h1>
+    <p>Bem vindo</p>  <!-- Quando eu incluir Style aqui sobrepoe o style do cabeçalho -->
+    <p class="sub">BBBBBB</p> <!-- class é uma forma de identicar este elemento no Styles e poder tratar as propriedades dele em específico-->
+    <p style="color: rgb(246, 248, 248);">AAAAAA</p> <!-- segue style estabelecido no cabeçalho green-->
+    <ul>
+        <li class="sub">AAAAAAAAA</li> <!-- consigo reutilizar a class sub-->
+        <li>BBBBBBBBB</li>
+        <li>CCCCCCCCC</li>
+    </ul>
+    
+    <h1 style="color: rgb(226, 218, 107); font-size: 20px;">Elementos em bloco e inline</h1>
+    <strong>Hoje</strong>   <!-- tag strong ocupa apenas o espaço dela-->
+    <strong>Dia</strong>
+    <p id="mes">Mes</p>              <!-- id só posso usar 1 vez--->
+    <p>Ano</p>              
+    <strong>Semana</strong>
+
+    <img src="images/Hamburg.jpg" alt="Esta é uma imagem de hamburgues com hamburgues salada e pão"> <!-- acessibilidade  - se utilizar um leitor de tela vai ler o alt--->
+
+</body>
+</html>
