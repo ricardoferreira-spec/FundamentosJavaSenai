@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let saldo = 1000
+
+        function operacaoBancaria() {
+            let continuar = true;
+
+            while (continuar) {
+
+                let operacao = prompt("Qual a operação você deseja realizar? depositar / sacar / sair").toLowerCase() // utilizo tolowerCase para tratar caso pessoa escreva com letra maiuscula
+
+                if (operacao == "depositar") {
+                    let valor = parseFloat(prompt("Qual o valor que você deseja depositar?"))
+                    operacaoDeposito(valor)
+                } else if (operacao == "sacar") {
+                    let valor = parseFloat(prompt("Qual o valor que você deseja sacar?"))
+                    operacaoSaque(valor)
+                } else if (operacao == "sair") {
+                    continuar = false
+                    alert(`Obrigado por usar o sistema bancário, Saldo final ${saldo}`)
+                }
+            }
+        }
+
+        operacaoBancaria()  // colocar a execussão fora do {}
+
+        function operacaoDeposito(valor) {
+            if (valor < 0) {
+                alert("valor inválido")
+            } else {
+                saldo = saldo + valor
+                alert(`Deposito realizado com sucesso! Saldo Atual ${saldo}`)
+            }
+        }
+
+        function operacaoSaque(valor) {
+            if (valor > saldo) {                                                // Verificar se a pessoa esta solicitando mais que o saldo
+                alert("Saldo insuficiente")
+            } else {                
+                if (valor <= 0) {
+                    alert("valor inválido")
+                } else {
+                    saldo = saldo - valor
+                    alert(`Saque realizado com sucesso! Saldo Atual ${saldo}`)
+                }
+            }
+        }
+
+    </script>
+</body>
+
+</html>
